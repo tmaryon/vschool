@@ -1,0 +1,63 @@
+/*  
+Assignment: Final Project
+Student: Taylor Maryon
+html file(s): style.css
+script file(s): app.js
+Notes: see index.html for complete notes (at EOF)
+*/
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #707f8f;
+}
+
+body {
+    background-image: url(stars.jpg);
+    background-size: cover;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #707f8f;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div {
+    margin: auto;
+    width: 800px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+
+button {
+    background-color: white; 
+    border: none;
+    padding: 16px; /* 32px */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px solid black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.btn1 {
+    position: center;
+    background-color: white;
+    color: #707f8f;
+    border: 2px solid steelblue;
+    transition-duration: 0.4s;
+    display: block;
+}
+
+.btn1:hover {
+    background-color: steelblue;
+    color: black;
+    border: 2px solid white;
+}

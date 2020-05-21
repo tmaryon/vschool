@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box; 
+    font-size: 20px;
+}
+
+div {
+    margin: 20px solid white;
+    padding: 10px green;
+    width: 600px;
+    height: 800px;
+
+}
+
+.lt-pink {
+    background-color: gray;
+    padding: 250px;
+    margin: 2px dashed black;
+    height: 800px;
+    width: 800px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    background-color: deeppink;
+    height: 10px;
+    width: 125px;
+}

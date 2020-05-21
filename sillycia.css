@@ -1,0 +1,40 @@
+/* 
+    Assignment: Silly CIA 2
+    Student: Taylor Maryon
+    html file(s): sillycia2.html
+    script file(s): none
+    Notes: See notes in sillycia2.html at the EOF.
+*/
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    text-align: center;
+    font-size: 55px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+div {
+    padding-left: 10px;
+}
+
+p, li {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+img {
+    float: left;
+    margin-right: 15px;
+}
+
+/* EOF */

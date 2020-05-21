@@ -1,0 +1,58 @@
+/*  
+Assignment: Color Boxes from Scratch
+Student: Taylor Maryon
+html file(s): box.html
+script file(s): none
+Notes: see box.html for complete notes (at EOF)
+*/
+
+* {
+    box-sizing: border-box; 
+}
+
+ul {
+    border: 10px white solid;
+}
+
+.test {
+    display: inline-block;
+    background-color: #F5C6D6;
+    height: 150px;
+    width: 90%;
+    border: 10px white solid;
+}
+
+.test2 {
+    display: inline-block;
+    background-color: #EE2E84;
+    padding: 0px;
+    height: 150px;
+    width: 22.3%;
+    border: 10px solid white;
+}
+
+.test3 {
+    display: inline-block;
+    background-color: #85CFD8;
+    height: 150px;
+    width: 45%;
+    border: 10px white solid;
+}
+
+.test4 {
+    display: inline-block;
+    background-color: #8DC63F;
+    height: 150px;
+    width: 70%;
+    border: 10px white solid;
+}
+
+.test5 {
+    display: inline-block;
+    background-color: #E76E34;
+    height: 150px;
+    width: 20%;
+    border: 10px white solid;
+}
+
+/* EOF */
