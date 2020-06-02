@@ -1,0 +1,212 @@
+.flag {
+    border: 1px solid black;
+}
+
+.france1 {
+    display: inline-block;
+    background-color: blue;
+    height: 200px;
+    width: 10%;
+}
+
+.france2 {
+    display: inline-block;
+    background-color: white;
+    height: 200px;
+    width: 10%;
+}
+
+.france3 {
+    display: inline-block;
+    background-color: red;
+    height: 200px;
+    width: 10%;
+}
+
+.germany1 {
+    background-color: black;
+    display: block;
+    height: 75px;
+    width: 30.5%;
+}
+.germany2 {
+    background-color: red;
+    display: block;
+    height: 75px;
+    width: 30.5%;
+}
+.germany3 {
+    background-color: yellow;
+    display: block;
+    height: 75px;
+    width: 30.5%;
+}
+.mad {
+    border: 3px white solid;
+    height: 200px;
+    width: 405px;
+    background-color: white;
+    border: 2px solid white;
+}
+.mad1 {
+    position: absolute;
+    background-color: green;
+    height: 100px;
+    width: 310px;
+    left: 110px;
+    
+}
+.mad2 {
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    top: 537px;
+    left: 110px;
+    width: 310px;
+}
+
+.swiss {
+    height: 200px;
+    width: 405px;
+    border: 2px solid white;
+}
+
+.swiss1 {
+    position: absolute;
+    background-color: red;
+    height: 200px;
+    width: 405px;
+}
+
+.swiss2 {
+    position: absolute;
+    background-color: white;
+    height: 150px;
+    width: 65px;
+    top: 666px;
+    left: 175px;
+}
+
+.swiss3 {
+    position: absolute;
+    background-color: white;
+    height: 60px;
+    width: 150px;
+    left: 134px;
+    top: 710px;
+}
+
+.swede {
+    height: 200px;
+    width: 405px;
+    border: 2px solid white;
+}
+
+.swede1 {
+    position: absolute;
+    background-color: #004B87;
+    height: 200px;
+    width: 405px;
+}
+
+.swede2 {
+    position: absolute;
+    background-color: #FFCD00;
+    height: 200px;
+    width: 45px;
+    left: 130px;
+}
+
+.swede3 {
+    position: absolute;
+    background-color: #FFCD00;
+    height: 45px;
+    width: 405px;
+    top: 925px;
+}
+
+.gambia {
+    height: 200px;
+    width: 405px;
+    border: 3px solid white;
+    background-color: white;
+}
+
+.gambia1 {
+    position: absolute;
+    background-color: red;
+    height: 10vh;
+    width: 33vw;
+}
+
+.gambia2 {
+    position: absolute;
+    background-color: blue;
+    height: 7vh;
+    width: 33vw;
+    top: 1150px;
+}
+
+.gambia3 {
+    position: absolute;
+    background-color: green;
+    height: 10vh;
+    width: 33vw;
+    top: 1225px;
+}
+
+.japan {
+    position: absolute;
+    height: 10vh;
+    width: 33vw;
+    top: 1300px;
+}
+
+.japan1 {
+    position: absolute;
+    border: 1px solid black;
+    height: 28vh;
+    width: 33vw;
+    background-color: white;
+}
+
+.japan2 {
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 50px;
+    left: 150px;
+}
+
+.niger {
+    position: absolute;
+    height: 10vh;
+    width: 33vh;
+    top: 1510px;
+}
+
+.niger1 {
+    position: absolute;
+    background-color: red;
+    height: 8vh;
+    width: 33vw;
+}
+
+.niger2 {
+    position: absolute;
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    left: 165px;
+    top: 65px;
+}
+.niger3 {
+    position: absolute;
+    background-color: green;
+    height: 8vh;
+    width: 33vw;
+    top: 140px;
+}

@@ -9,10 +9,10 @@ function(s): showColors(), showName()
 
 
 var colors = ["red", "yellow", "green", "blue", "purple"];
-var person = {
-    name: "Taylor",
-    city: "Salt Lake City",
-    stars: ["Sirius", "Pollux", "Capella", "Polaris"]
+var person = { 
+    name: "Taylor", 
+    city: "Salt Lake City", 
+    stars: ["Sirius", "Pollux", "Capella", "Polaris"] 
 };
 
 function showColors() {
