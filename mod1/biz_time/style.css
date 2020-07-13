@@ -1,0 +1,42 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: darkgray;
+}
+
+p {
+    font-size: 25px;
+    color: black;
+}
+
+.header {
+    display: inline-block;
+    border: 1px dashed black;
+    width: 100%;
+}
+
+.header img {
+    position: relative;
+    float: right;
+    bottom: 120px;
+    right: 15px;
+}
+
+.header h1 {
+    position: relative;
+    font-size: 50px;
+    bottom: 30px;
+}
+
+.header p {
+    position: relative;
+    bottom: 15px;
+}
+
+.header span {
+    position: relative;
+    top: 40px;
+}
+

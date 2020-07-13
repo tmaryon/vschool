@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box; 
+}
+
+@media only screen and (min-width: 400px) {
+    div {
+        border: 1px white solid;
+    }
+
+    .row1 {
+        position: relative;
+        border: 1px white solid;
+        height: 150px;
+        width: 100%;
+        background-color: #F5C6D6;
+    }
+
+    .row2 {
+        position: relative;
+        border: 1px white solid;
+        height: 150px;
+        width: 100%;
+        background-color: #EE2E84;
+    }
+
+    .row3 {
+        position: relative;
+        border: 1px white solid;
+        height: 150px;
+        width: 100%;
+        background-color: #85CFD8;
+    }
+
+    .row4one {
+        position: relative;
+        border: 1px white solid;
+        height: 150px;
+        width: 100%;
+        background-color: #8DC63F;
+    }
+
+    .row4two {
+        position: relative;
+        border: 2px white solid;
+        height: 150px;
+        width: 100%;
+        background-color: #E76E34;    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div {
+        border: 3px white solid;
+    }
+
+    .row1 {
+        position: relative;
+        border: 2px white solid;
+        height: 150px;
+        width: 97%;
+        background-color: #F5C6D6;
+    }
+
+    .row2 {
+        display: inline-block;
+        position: relative;
+        border: 2px white solid;
+        height: 150px;
+        width: 24%;
+        background-color: #EE2E84;
+    }
+
+    .row3 {
+        display: inline-block;
+        position: relative;
+        border: 2px white solid;
+        height: 150px;
+        width: 48.3%;
+        background-color: #85CFD8;
+    }
+
+    .row4one {
+        display: inline-block;
+        position: relative;
+        border: 2px white solid;
+        height: 150px;
+        width: 73%;
+        background-color: #8DC63F;
+    }
+
+    .row4two {
+        display: inline-block;
+        position: relative;
+        border: 2px white solid;
+        height: 150px;
+        width: 23.5%;
+        background-color: #E76E34;
+    }
+}
