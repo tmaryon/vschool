@@ -72,7 +72,7 @@ function fightMonster(encVal) {
         let playerHitChance  = Math.round(Math.random() * 100);
         let monsterHitChance = Math.round(Math.random() * 100);
         let playerhitDamage  = Math.round(Math.random() * 25);
-        let monsterhitDamage = Math.round(Math.random() * 20);
+        let monsterhitDamage = Math.round(Math.random() * 15);
         if (playerHitChance < 50) {
             console.log('\x1b[32m%s\x1b[0m',"You hit the " + monsters[enc].name + " for " + playerhitDamage + " damage!")
             monsters[enc].hitPoints -= playerhitDamage;
@@ -102,8 +102,6 @@ function fightMonster(encVal) {
 function fleeMonster(encVal) {
     let runChance = Math.floor((Math.random() * 99) +1);
     let enc = encVal;
-    console.log(runChance);
-    console.log(monsters[enc]);
     if (runChance < 50) {
         console.log('\x1b[31m%s\x1b[0m',"You fail to run, and the " + monsters[enc].name + " attacks!");
         fightMonster(encVal);
