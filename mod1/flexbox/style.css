@@ -1,0 +1,19 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
+    text-align: center;
+}
+h1 {
+    color: steelblue;
+    
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    padding: 2px;
+    margin: 2px dashed red;
+    height: 150px;
+    width: 95%;
+}

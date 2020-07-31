@@ -22,11 +22,10 @@ const vampire = new Monster("Vampire", 100, "Magic Amulet");
 const mindFlayer = new Monster("Mind Flayer", 125, "Crown");
 const inventory = ["Torch", "Sword"]; // init inventory
 monsters.push(orc, vampire, mindFlayer); // load the monsters array
-function Player(name, hitPoints) 
-    {
-        this.name = "None";
-        this.hitPoints = 200;
-    };
+function Player(name, hitPoints) {
+    this.name = "None";
+    this.hitPoints = 200;
+};
 player = new Player();
 
 // functions
