@@ -9,29 +9,27 @@
 <body>
     <h1 id="titleHeader">Javascript Simple Calculator</h1>
     <div id="add">
-        <div id="addInner">
-            <form>  
-                <input type="number" placeholder="First Number"/> <br>
-                <input type="number" placeholder="Second Number"/> <br>
+            <form name="sum">  
+                <input type="number" placeholder="First Number" name="addNumOne"/> <br>
+                <input type="number" placeholder="Second Number" name="addNumTwo"/> <br>
                 <button id="addButton" value="Add">Add</button>
-                <p id="sum"></p>
+                <p id="addResult">Result: </p>
             </form>
-        </div>
     </div>
     <div id="subtract">
-        <form>
-            <input type="number" placeholder="First Number"/> <br>
-            <input type="number" placeholder="Second Number"/> <br>
+        <form name="difference">
+            <input type="number" placeholder="First Number" name="subNumOne" required/> <br>
+            <input type="number" placeholder="Second Number" name="subNumTwo" required/> <br>
             <button id="subButton">Subtract</button>
-            <p id="difference"></p>
+            <p id="diffResult">Result: </p>
         </form>
     </div>
     <div id="multiply">
-        <form>
-            <input type="number" placeholder="First Number "/> <br>
-            <input type="number" placeholder="Second Number"/> <br>
+        <form name="product">
+            <input type="number" placeholder="First Number " name="mulNumOne"/> <br>
+            <input type="number" placeholder="Second Number" name="mulNumTwo"/> <br>
             <button id="multButton">Multiply</button>
-            <p class="product"></p>
+            <p id="prodResult">Result: </p>
         </form>
     </div>
     <script src="main.js"></script>
