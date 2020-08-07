@@ -1,0 +1,32 @@
+#titleHeader {
+    text-align: center;
+    font-size: medium;
+    color: cornflowerblue;
+    font-family: Helvetica, sans-serif;
+}
+
+#add {
+    align-content: center;
+    height: 100px;
+    width: 50%;
+    background-color: palegreen;
+}
+
+/* #addInner {
+    align-content: center;
+    
+} */
+
+#subtract {
+    align-content: center;
+    height: 100px;
+    width: 50%;
+    background-color: palevioletred;
+}
+
+#multiply {
+    align-content: center;
+    height: 100px;
+    width: 50%;
+    background-color: khaki;
+}
