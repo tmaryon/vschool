@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Make your reservation</h1>
+    <form name="reserve">
+        Name:
+        <input type="text" name="fName" placeholder="First Name" required /> 
+        <input type="text" name="lName" placeholder="Last Name" required /> <br><br>
+        Gender: <br>
+        Female <input type="radio" name="gender" value="Female" /> <br>
+        Male <input type="radio" name="gender" value="Male" /> <br> 
+        Prefer Not to Say <input type="radio" name="gender" value="Prefer Not to Say" /> <br><br>
+        Age: <input type="number" name="age" placeholder="Age" required /> <br><br>
+        Destination:<br>
+        <select name="destination" id="destination">
+            <option value="San Jose, CR">San Jose, Costa Rica</option>
+            <option value="Moscow, RUS">Moscow, Russia</option>
+            <option value="Chicago, IL">Chicago, IL, USA</option>
+        </select> <br><br>
+        Dietary Restrictions (select all that apply): <br>
+        <input type="checkbox" value="Vegetarian" name="dietary">Vegetarian<br>
+        <input type="checkbox" value="Halal" name="dietary">Halal<br>
+        <input type="checkbox" value="Kosher" name="dietary">Kosher<br>
+        <br><br>
+        <button id="submitAll">Submit</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
