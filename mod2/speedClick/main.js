@@ -1,5 +1,5 @@
 // event listener/func call
-document.getElementById("clicker").addEventListener("click", countClicks, true)
+document.querySelector("html").addEventListener("click", countClicks, true)
 // count the clicks 
 let click = 0
 function countClicks() {
