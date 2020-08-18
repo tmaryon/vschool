@@ -6,6 +6,5 @@ function countClicks() {
     click++
     document.getElementById("results").textContent = "Total Clicks: " + click
     localStorage.setItem("click", click)
-    //console.log(click)
     console.log(document.body.innerText)
 }
