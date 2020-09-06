@@ -1,0 +1,71 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    display: grid;
+    background-color: seashell;
+    grid-gap: 1em;
+}
+
+#container > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    text-align: center;
+}
+
+#box1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: tomato;
+    transition: background-color 1s linear 1s, border-radius 1s linear, box-shadow 1s ease-in-out;
+}
+
+#box1:hover {
+    border-radius: 1em;
+    background-color: teal;
+    box-shadow: 10px 10px 5px 0 #999999;
+}
+
+#box2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: slateblue;
+    transition: all 1s ease-in-out 0.5s;
+}
+
+#box2:hover {
+    background-color: blue;
+    border-radius: 75%;
+    box-shadow: 10px 10px 10px 0 gray;
+}
+
+#box3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: tomato;
+    transition: all 0.5 ease-in-out 0.5s;
+}
+
+#box3:hover {
+    background-image: url(milky_way.jpg);
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: slateblue;
+}
+#box5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: tomato;
+}
+#box6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: slateblue;
+}
