@@ -2,31 +2,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#grid-container {
-    background-color: seashell;
-    display: grid;
-}
-
-div {
-    border-radius: 3px;
-}
-
 @media only screen and (min-width: 400px) {
     #grid-container {
         background-color: seashell;
         display: grid;
     }
 
-    div {
-        border-radius: 3px;
-    }
-
     #grid-container > div {
         display: grid;
-        border: 2px solid seashell;
+        border-radius: 3px;
         grid-gap: 5px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     header {
@@ -75,10 +62,6 @@ div {
         grid-template-rows: repeat(5, auto);
     }
 
-    div {
-        border-radius: 3px;
-    }
-
     header {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
@@ -113,17 +96,17 @@ div {
 }
 
 @media only screen and (min-width: 1000px) {
-    #grid-container > div {
-        border: 2px solid seashell;
-        border-radius: 4px;
-        grid-gap: 4px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, auto);
-        width: 100%;
+    #grid-container {
+        background-color: seashell;
+        display: grid;
     }
-
-    div {
-        border-radius: 3px;
+   
+    #grid-container > div {
+        border: 3px solid seashell;
+        border-radius: 4px;
+        grid-gap: 5px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 100px);
     }
 
     header {
@@ -136,7 +119,6 @@ div {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         background-color: darkgray;
-        grid-gap: 4px;
         border-radius: 3px;
     }
 
@@ -144,6 +126,7 @@ div {
         grid-column: 2 / 5;
         grid-row: 2 / 3;
         background-color: slategray;
+        overflow-y: scroll;
     }
 
     #sidebar2 {
@@ -157,7 +140,6 @@ div {
         grid-row: 5 / 6;
         background-color: slategray;
         border-radius: 3px;
-        grid-gap: 5px;
     }
 }
 

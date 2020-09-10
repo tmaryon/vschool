@@ -5,7 +5,7 @@ function total(arr) {
     return arr.reduce((final, num) => final += num, 0)
 }
 //test
-console.log(total([1,2,3])); // 6
+console.log(total([1,2,3,5,6,7,8,9,10])); // 6
 
 // string concat
 function stringConcat(arr) {
