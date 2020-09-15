@@ -1,0 +1,7 @@
+header {
+    background-image: url(huntington.jpg), url(gridlines.png);
+    background-position: left top;
+    background-repeat: repeat;
+    height: 400px;
+    width: 800px;
+}
