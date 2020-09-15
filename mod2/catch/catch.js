@@ -10,7 +10,7 @@ function sum(x, y){
     // check data types first and throw error
     try {
         if (typeof(x) !== 'number') throw new Error("x is not a number!")
-        if (typeof(y) !== 'number') throw new Error("y is not a number!")
+        if (typeof(y) !== 'number') throw new Error(`${y} is not a number!`)
         // return the sum
         // return "sum: " + (x + y) + "\n"
         return x + y;
@@ -43,5 +43,5 @@ function login(username, password) {
 }
 
 login("sam", "321zyx");
-login("bob", "123abc");
+//login("bob", "123abc");
 login("sam", "123abc");
