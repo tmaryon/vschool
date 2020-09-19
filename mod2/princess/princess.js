@@ -1,8 +1,12 @@
+//----- ASSIGNMENT ----------------------------// 
+/* Name:    The Princess is in Another Castle  //
+/* Author:  Taylor Maryon                      //
+/----------------------------------------------*/
 
 //----- CLASS & VARIBLE DECLARATIONS ----------//
 class Player {
     // create construtor and defaults
-    constructor (name = "Mario", totalCoins = 0, status = "Big", hasStar = false, gameActive = true) {
+    constructor (name = "Mario", totalCoins = 0, status = "Small", hasStar = false, gameActive = true) {
         this.name = name
         this.totalCoins = totalCoins
         this.status = status
@@ -87,11 +91,10 @@ debug = (select) => {
 }
 
 //----- MAIN ----------------------------------//
-let newPlayer = new Player("Mario", 0, "Big", false);
-debug(false);   // set debug to "true" to enable test loop
-randomRange();
 
-// newPlayer.addCoin()
-// newPlayer.gotPowerup()
-// newPlayer.gotHit()
-// newPlayer.print()
+    // instantiate new player class
+    let newPlayer = new Player("Luigi", 0, "Small", false);
+    // set debug to "true" to enable testing/debugging
+    debug(false);   
+    const runGame = setInterval(randomRange, 1000);
+    // TODO: END THE BLOODY INTERVAL if newPlayer.gameActive === false!  HOW?!
