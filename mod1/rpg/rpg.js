@@ -40,7 +40,6 @@ function checkMonsters() {
 }
 
 function walk() {
-    let encChance = Math.round(Math.random() * 100);
     if (encChance > 33) { 
         console.log('\x1b[35m%s\x1b[0m',"You enter an empty room.");
     } else if (encChance < 33) {
