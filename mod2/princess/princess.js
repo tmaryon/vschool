@@ -64,7 +64,7 @@ class Player {
 //----- FUNCTIONS -----------------------------//
 
 randomRange = () => {
-    let randomNum = Math.round(Math.random() * 2);
+    let randomNum = Math.floor(Math.random() * 2);
     // uncomment to debug:
     // console.log(`Random Num: ${randomNum}`)
     if (randomNum === 0) {
@@ -74,21 +74,26 @@ randomRange = () => {
     } else if (randomNum === 2) {
         newPlayer.addCoin();
     }
+    if(newPlayer.gameActive === false) {
+        clearInterval(runGame)
+    }
     newPlayer.print();
-}
+
+}   // end randomRange()
 
 debug = (select) => {
     if (select === true) {
         var i = 0;
-        while (i < 10) {
+        while (i < 20) {
             i++;
             randomRange();
             if (newPlayer.gameActive === false) {
                 break;
-            }
-        }
-    }
-}
+            }   // if 
+        }   //while
+    }   // if
+}   // end debug()
+
 
 //----- MAIN ----------------------------------//
 
@@ -97,4 +102,8 @@ debug = (select) => {
     // set debug to "true" to enable testing/debugging
     debug(false);   
     const runGame = setInterval(randomRange, 1000);
+    
     // TODO: END THE BLOODY INTERVAL if newPlayer.gameActive === false!  HOW?!
+
+
+// EOF //
