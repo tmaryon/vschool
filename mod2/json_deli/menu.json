@@ -1,0 +1,94 @@
+{
+"JSON_Deli": 
+[
+    { 
+        "appetizers": [
+            {   
+                "amuse_bousch": "parmesan sphere with olive dust", 
+                "ingredients": [ "parmigiano reggiano", "Niçoise olives", "extra virgin olive oil foam" ],
+                "price": 22,
+                "category": "vegetarian"
+            },
+            {
+                "abalone_chawan_mushi": "savory egg custard with abalone and California caviar",
+                "ingredients": [ "farm fresh eggs", "abalone", "California sustainable caviar" ],
+                "price": 28
+            },
+            {
+                "eggplant_and_sunchoke_tart": "puree of grilled eggplant and sunchoke on phyllo dough",
+                "ingredients": [ "Japanese eggplant", "Jerusalem sunchoke", "phyllo dough"],
+                "price": 18,
+                "category": "vegan"
+            }   
+        ],
+        "cold_sandwiches": [
+            {
+                "jambon_manchego_brioche": "Spanish jambon with aged Manchego on homemade brioche",
+                "ingredients": [ "air-dried Jambon", "aged reserve Manchego", "brioche" ],
+                "price": 30
+            },
+            {
+                "lox_with_onion_jelly": "lox and onion jelly served on baguette",
+                "ingredients": [ "Nova Scotian lox", "red onion jelly", "creme fraiche", "baby greens", "homemade baguette" ],
+                "price": 26
+            },
+            {
+                "white_bean_and_avocado_toast": "sliced Haas avocados and white bean puree on toasted black bread",
+                "ingredients": [ "homemade black bread", "Tarbais white beans", "Haas avocados" ],
+                "price": 26
+            }   
+        ],
+        "hot_sandwiches": [
+            {
+                "culatello_ham_and_cheese": "aged Culatello ham with aged Fontina and Grana Padano on ciabatta",
+                "ingredients": [ "Culatello ham", "Aged Fontina cheese", "Grana Padano cheese", "homemade ciabatta" ],
+                "price": 32
+            },
+            {
+                "grilled_sardine_baguette": "grilled Mediterranean sardines with caper butter on baguette",
+                "ingredients":[ "Mediterranean sardines", "compound butter", "grilled onions", "homemade baguette" ],
+                "price": 38
+            },
+            {
+                "red_pepper_on_seed_bun": "grilled red peppers with basil foam and microgreens on seed bun",
+                "ingredients":[ "farm red peppers", "farm basil", "farm microgreens", "homemade seeded bun" ],
+                "price": 26
+            }
+        ],
+        "desserts": [
+            {
+                "cherry_tartlet": "Door County cherries with almond custard in puff pastry",
+                "ingredients": [ "Door County cherries", "Gran Marnier", "almond flour", "eggs", "butter", "flour" ],
+                "price": 22
+            },
+            {
+                "mille_feuilles": "layers of dark chocolate with apricots, hazlenut, and crispy dough",
+                "ingredients": [ "Ecuadorian dark chocolate", "farm apricots", "hazlenuts", "eggs", "butter", "flour"],
+                "price": 28
+            },
+            {
+                "flourless_vegan_chocolate_cake": "chocolate ganache atop rich chocolate cake with coconut creme",
+                "ingredients": [ "coconut milk", "Tanzanian chocolate", "tofu", "raw cane sugar" ],
+                "price": 20
+            }
+        ],
+        "drinks": [
+            {
+                "citrus_cooler": "cara cara orange and finger lime juice with rye and muddled yuzu",
+                "ingredients": [ "cara cara oranges", "finger limes", "High West Rye", "yuzu fruit" ],
+                "price": 14
+            },
+            {
+                "virgils_soda": "root beer, cola, creme soda, or orange soda",
+                "ingredients": [ "carbonated water", "cane sugar", "natural flavors" ],
+                "price": 8
+            },
+            {
+                "strawberry_and_watermelon_juice": "freshly juiced strawberries with a hint of watermelon juice",
+                "ingredients": [ "water", "farm strawberries", "watermelon juice", "farm mint" ],
+                "price": 11
+            }
+        ]
+    }
+]
+}
