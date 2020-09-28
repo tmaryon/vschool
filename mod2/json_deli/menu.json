@@ -4,13 +4,13 @@
     { 
         "appetizers": [
             {   
-                "amuse_bousch": "parmesan sphere with olive dust", 
+                "amuse_bousch": "cracked parmesan sphere with olive dust", 
                 "ingredients": [ "parmigiano reggiano", "Niçoise olives", "extra virgin olive oil foam" ],
                 "price": 22,
                 "category": "vegetarian"
             },
             {
-                "abalone_chawan_mushi": "savory egg custard with abalone and California caviar",
+                "abalone_chawan_mushi": "savory Japanese egg custard with abalone and California caviar",
                 "ingredients": [ "farm fresh eggs", "abalone", "California sustainable caviar" ],
                 "price": 28
             },
