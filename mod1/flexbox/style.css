@@ -11,7 +11,7 @@ h1 {
 .flexContainer {
     display: flex;
     flex-direction: column;
-    border: 3px solid black;
+    border: solid black;
     padding: 2px;
     margin: 2px dashed red;
     height: 150px;

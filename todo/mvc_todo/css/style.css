@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+#main {
+    max-width: 400px;
+    margin: 2rem auto;
+
+}
+
+[type="text"], button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid cornflowerblue;
+    border-radius: 3px;
+}
+
+button {
+    cursor: pointer;
+    border: 1.5px solid tomato;
+    margin: 0 0.5rem;
+}
+
+[type="text"] {
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
