@@ -32,7 +32,7 @@ console.log(peopleWhoBelongToTheIlluminati([
 ]));
 
 function ofAge(arr){
-    return arr.filter(oldEnough => oldEnough.age > 18)
+    return arr.filter(person => person.age > 18)
 }
 
 console.log(ofAge([
