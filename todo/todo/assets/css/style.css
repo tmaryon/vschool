@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    
+}
+
+/* .todoForm {
+    float: right;
+} */
+
+.container {
+    background-color: lightsteelblue;
+}
+
+.todoCont {
+    display: flex;
+    flex-direction: row; /* */
+    border: 3px solid dodgerblue;
+    background-color: lightsteelblue;
+    border-radius: 3px;
+    width: 50%;
+}
+
+.colOne { /*  May need to separate for styling*/
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 180px;
+    font-size: 0.9em;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.colTwo { /*  May need to separate for styling*/
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100px;
+}
+.delButton {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    background-color: peru;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+
+}
