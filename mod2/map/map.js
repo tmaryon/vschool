@@ -22,11 +22,11 @@ function capitalizeNames(arr){
     return arr.map ((str) => {
         // Capitalize first letter
         // Slice & lowercase remainder of string
-        return str[0].toUpperCase() + str.slice(1).toLowerCase();  
+        return str[0].toUpperCase() + str.slice(1).toLowerCase()  
     })
 }
 // run it
-console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt", "macGyver"]));
 
 function namesOnly(arr){
     return arr.map ((name) => {
