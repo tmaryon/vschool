@@ -15,18 +15,18 @@
 ### TODO tasks:
 
 **index.html**:
-- HTML 5 compliant
-- `<link>` to `/assets/css/style.css`
-- create `<div class='container'>`; append new todos inside
-- `<script>` source: /assets/js/app.js
+- ~HTML 5 compliant~
+- ~`<link>` to `/assets/css/style.css`~
+- ~create `<div class='container'>`; append new todos inside~
+- ~`<script>` source: /assets/js/app.js~
 
 **/assets/js/app.js**
-- Todo class:   class for creating new todos
-- `getAll()`:     get all todos from V School API
+- ~Todo class:   class for creating new todos~
+- ~`getAll()`:     get all todos from V School API~
 - `createTodo()`: 
-    - create todos using `GET` data
-    - create a new container for each todo
-    - append todos to `.container` in `index.html`
+    - ~create todos using `GET` data~
+    - ~create a new container for each todo~
+    - ~append todos to `.container` in `index.html`~
     - add `eventListener` for form submit button in `index.html`
     - creates new todos using form input from `index.html`
     - reference `rmtodo()` to function, for deleting todos via button
@@ -44,9 +44,9 @@
 
 **/assets/css/style.css**
 
-`.container`:   container on `index.html`
-`.completed`:   strikethrough text 
-`.todoCont`:    todo container for all items; uses `flex` display
-`.colOne`:      flex column for todo fields
-`.colTwo`:      flex column for `Delete` button and `Completed` checkbox
-`.delButton`:   styling for `Delete` button
+~`.container`:   container on `index.html`~
+~`.completed`:   strikethrough text~ 
+~`.todoCont`:    todo container for all items; uses `flex` display~
+~`.colOne`:      flex column for todo fields~
+~`.colTwo`:      flex column for `Delete` button and `Completed` checkbox~
+~`.delButton`:   styling for `Delete` button~
