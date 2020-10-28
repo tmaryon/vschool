@@ -8,18 +8,17 @@ body {
     
 }
 
-/* .todoForm {
-    float: right;
-} */
-
+/* main container */
 .container {
     background-color: lightsteelblue;
 }
 
+/* apply to completed: true */
 .completed {
     text-decoration: line-through;
 }
 
+/* todo container */
 .todoCont {
     display: flex;
     flex-direction: row; /* */
@@ -29,6 +28,7 @@ body {
     width: 50%;
 }
 
+/* column one inside of .todoCont */
 .colOne { /*  May need to separate for styling*/
     display: flex;
     flex-direction: column;
@@ -39,12 +39,16 @@ body {
     padding-top: 10px;
     
 }
+
+/* column two inside of .todoCont */
 .colTwo { /*  May need to separate for styling*/
     display: flex;
     flex-direction: column;
     width: 20%;
     height: 100px;
 }
+
+/* todo delete button styling */
 .delButton {
     display: inline-block;
     width: 100px;
