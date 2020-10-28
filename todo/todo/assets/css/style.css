@@ -16,12 +16,16 @@ body {
     background-color: lightsteelblue;
 }
 
+.completed {
+    text-decoration: line-through;
+}
+
 .todoCont {
     display: flex;
     flex-direction: row; /* */
     border: 3px solid dodgerblue;
     background-color: lightsteelblue;
-    border-radius: 3px;
+    border-radius: 6px;
     width: 50%;
 }
 
