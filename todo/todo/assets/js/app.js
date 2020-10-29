@@ -57,13 +57,13 @@ function createTodo(id, title, description, price, imgUrl, completed=false) {
     todoCont.appendChild(colTwo)
     divContain.appendChild(todoCont)
     // Column one items
-    const titleDiv      = document.createElement('div')
+    const titleDiv      = document.createElement('p')
     titleDiv.innerText  = `Title: ${title}`
-    const descDiv       = document.createElement('div')
+    const descDiv       = document.createElement('p')
     descDiv.innerText   = `Description: ${description}`
-    const priceDiv      = document.createElement('div')
+    const priceDiv      = document.createElement('p')
     priceDiv.innerText  = `Price: ${price}`
-    const complDiv      = document.createElement('div')
+    const complDiv      = document.createElement('p')
     complDiv.innerText  = `Completed: ${completed}`
     const imgUrlDiv     = document.createElement('img')
     imgUrlDiv.src = imgUrl
@@ -101,13 +101,10 @@ function createTodo(id, title, description, price, imgUrl, completed=false) {
     // add span for checkbox text
     todoForm.appendChild(spanCheckbox)
     spanCheckbox.appendChild(checkBox)
-    const brGap = document.createElement('br')
     // add delete button method
     // todoButton is button variable in Todo
     // todoCont is the todo div container
     rmTodo(todoID, todoButton, todoCont)
-    // easy way to add a gap between containers, since this is flexbox.
-    divContain.appendChild(brGap)
     checkBox.addEventListener("click", (e) => {
         /*
             when the checkbox is checked, add the '.completed' class to
@@ -116,31 +113,18 @@ function createTodo(id, title, description, price, imgUrl, completed=false) {
             outside of createTodo() for these actions?
         */
         
-        // if (!e.target.checked) {
-        //    // add .completed class
-        //    // change completed = true w/ PUT
-        // } else {
-        //    // any action required?
-        // }
-    })
-    todoButton.addEventListener('click', (e) => {
-        // new Todo instance
-        const newTodo = new Todo('', form.todoButton.title, form.todoButtondescription, 
-            form.todoButton.price, form.todoButton.imgUrl, false)
-        console.log(newTodo)
-        // axios post
-        const postTodo = {
-            title: title,
-            description: description,
-            price: price,
-            imgUrl: imgUrl
+        if (e.target.checked) {
+           // add .completed class
+           // try classList.toggle()
+           colOne.classList.add('completed')
+           
+           // change completed = true w/ PUT
+        } else {
+           // if unchecked
+           colOne.classList.remove('completed')
         }
-    
-        // Post the todo
-        axios.post("https://api.vschool.io/taylormaryon/todo", postTodo)
-            .then(resp => console.log(resp.data))
-            .catch(err => alert(resp.data))
-    }) 
+    })
+
 }
 
 // POST a new Todo to V School API
@@ -148,7 +132,8 @@ function createTodo(id, title, description, price, imgUrl, completed=false) {
 
 const addTodo = (id, title, description, price, imgUrl, completed=false) => {
     createTodo(id, title, description, price, imgUrl, completed)
-    // axios.post()
+    
+    
 }
 
 const completeTodo = id => {
@@ -164,7 +149,7 @@ const rmTodo = ((id, delButton, todoItem) => {
     // delButton event listener
     delButton.addEventListener('click', ()=> {
         // DELETE from API
-        axios.delete("https://api.vschool.io/taylormaryon/todo" + id)
+        axios.delete("https://api.vschool.io/taylormaryon/todo/" + id)
             .then(resp => console.log(resp))
             .catch(err => alert(err))
         todoItem.remove()
@@ -172,30 +157,37 @@ const rmTodo = ((id, delButton, todoItem) => {
     // remove ze container.  SCHNELL!
     
 })
+
 /* MAIN */
+
+// eventListener for todoForm <submit> button
+// Add new item to V School Todo API
+form.addEventListener('submit', (e) => {
+    // new Todo instance
+    e.preventDefault()
+    const newTodo = new Todo(form.title.value, form.description.value, 
+        form.price.value, form.imgUrl.value, false)
+    console.log(newTodo)
+ 
+    // Post the todo
+    axios.post("https://api.vschool.io/taylormaryon/todo", newTodo)
+        .then(resp => console.log(resp.data))
+        .catch(err => alert(resp.data))
+}) 
 
 // GET todo items from V School Todo API
 getAll()
 
-// eventListener for todoForm <submit> button
-// Add new item to V School Todo API
-
-todoForm.addEventListener("click", ()=> {
-    // values captured from todoForm
-    const postTodo = {
-        title: todoForm.title.value,
-        description: todoForm.description.value,
-        price: todoForm.price.value,
-        imgUrl: todoForm.imgUrl.value,
-        completed: todoForm.price.value
-    }
-    // Post the todo
-    axios.post("https://api.vschool.io/taylormaryon/todo", postTodo)
-        .then(resp => console.log(resp.data))
-        .catch(err => console.log(resp.data))
-})
 
 /* REFERENCE */
+
+/*
+     * @param {String} title 
+     * @param {String} description 
+     * @param {Number} price 
+     * @param {String} imgUrl 
+     * @param {Boolean} completed 
+*/
 
 // Todo object
 // {
