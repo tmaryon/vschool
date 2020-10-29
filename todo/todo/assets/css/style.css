@@ -26,6 +26,7 @@ body {
     background-color: lightsteelblue;
     border-radius: 6px;
     width: 50%;
+    margin-top: 1em;
 }
 
 /* column one inside of .todoCont */
@@ -40,6 +41,10 @@ body {
     
 }
 
+.colOne > p {
+    padding: 0;
+    margin: 0;
+}
 /* column two inside of .todoCont */
 .colTwo { /*  May need to separate for styling*/
     display: flex;
