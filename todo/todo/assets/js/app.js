@@ -44,7 +44,7 @@ const getAll = () => {
 function createTodo(id, title, description, price, imgUrl, completed=false) {
     // assign, but do not use, _id
     const todoID = id
-    console.log(`todoID: ${todoID}`) // uncomment to verify
+    // console.log(`todoID: ${todoID}`) // uncomment to verify
     const divContain = document.getElementById('container')
     // create todo container and two column divs
     const todoCont      = document.createElement('div')
@@ -89,10 +89,10 @@ function createTodo(id, title, description, price, imgUrl, completed=false) {
     // for new Todos, if 'completed === true'
     // add .completed class to checkBox
     // also, check the box
-    if (completed === true) {
-        checkBox.className = 'completed'
-        checkBox.checked
-    }
+    // if (completed === true) {
+    //     checkBox.className = 'completed'
+    //     checkBox.checked
+    // }
     todoButton.className = 'delButton'
     todoButton.innerText = "Delete Todo"
     colTwo.appendChild(todoForm)
@@ -130,17 +130,17 @@ function createTodo(id, title, description, price, imgUrl, completed=false) {
 // POST a new Todo to V School API
 // Note: see VARAIBLES for declaration of form
 
-const addTodo = (id, title, description, price, imgUrl, completed=false) => {
-    createTodo(id, title, description, price, imgUrl, completed)
+// const addTodo = (id, title, description, price, imgUrl, completed=false) => {
+//     createTodo(id, title, description, price, imgUrl, completed)
     
     
-}
+// }
 
-const completeTodo = id => {
+// const completeTodo = id => {
     
-    axios.put()
-    // strikethrough
-}
+//     axios.put()
+//     // strikethrough
+// }
 
 
 
